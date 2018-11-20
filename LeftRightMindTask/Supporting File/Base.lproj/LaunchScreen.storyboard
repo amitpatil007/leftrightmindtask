@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RU3-Uk-eVf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fqK-co-1y3">
+            <objects>
+                <viewController id="RU3-Uk-eVf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3kQ-4l-oMT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rX7-aq-W5W">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub-Logo-white-1" translatesAutoresizingMaskIntoConstraints="NO" id="NeV-wP-EpM">
+                                <rect key="frame" x="8" y="288" width="359" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NeV-wP-EpM" secondAttribute="height" multiplier="1:1" constant="268" id="IHY-fr-HJU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NeV-wP-EpM" firstAttribute="width" secondItem="rX7-aq-W5W" secondAttribute="width" multiplier="0.8" constant="59" id="KTh-lf-CXd"/>
+                            <constraint firstItem="NeV-wP-EpM" firstAttribute="centerX" secondItem="rX7-aq-W5W" secondAttribute="centerX" id="fGB-lr-RBm"/>
+                            <constraint firstItem="rX7-aq-W5W" firstAttribute="width" secondItem="3kQ-4l-oMT" secondAttribute="width" id="gFV-3A-qrb"/>
+                            <constraint firstItem="rX7-aq-W5W" firstAttribute="height" secondItem="3kQ-4l-oMT" secondAttribute="height" id="gx9-lJ-AAS" customClass="Lo"/>
+                            <constraint firstItem="rX7-aq-W5W" firstAttribute="centerX" secondItem="T24-ml-2YW" secondAttribute="centerX" id="lo0-9J-Fpg"/>
+                            <constraint firstItem="NeV-wP-EpM" firstAttribute="centerY" secondItem="rX7-aq-W5W" secondAttribute="centerY" id="uFB-yY-nj3"/>
+                            <constraint firstItem="rX7-aq-W5W" firstAttribute="centerY" secondItem="T24-ml-2YW" secondAttribute="centerY" constant="-10" id="xl2-jq-Pil"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T24-ml-2YW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCW-Qy-nRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6730" y="-11447"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GitHub-Logo-white-1" width="1200" height="492"/>
+        <image name="splash_screen_bg" width="2160" height="3404"/>
+    </resources>
+</document>
